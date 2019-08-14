@@ -1,0 +1,11 @@
+.filter {
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.options-section {
+    border: 1px solid red;
+    text-align: center;
+    margin: 10px;
+}

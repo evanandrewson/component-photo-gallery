@@ -63,7 +63,7 @@ const images = [
         horns: 1
     },
     {
-        url: 'https://www.shopmascot.com/image/cache/mascotnew/new196-800x800.jpg',
+        url: 'https://www.sdfay.com/image/cache/catalog/mascot/mascot698568470-800x800.jpg',
         title: 'Rhino costume',
         description: 'Mascots have to get their costumes somewhere',
         keyword: 'rhino',
