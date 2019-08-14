@@ -1,6 +1,7 @@
 import Component from './Component.js';
 import Header from './Header.js';
-import images from '../../assets/images.js'
+import images from '../../assets/images.js';
+import ImageList from './ImageList.js';
 
 class App extends Component {
     onRender(dom) {
@@ -10,8 +11,11 @@ class App extends Component {
 
         const props = { images: images };
 
-        const hornList = new hornList(props);
-        const hornListDOM = hornList.renderDOM();
+        const imageList = new ImageList(props);
+        const imageListDOM = imageList.renderDOM();
+
+        const listSection = dom.querySelector('.list-section');
+        listSection.appendChild(imageListDOM);
     }
     
     
