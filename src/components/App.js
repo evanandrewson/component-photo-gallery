@@ -4,15 +4,14 @@ import Header from './Header.js';
 class App extends Component {
     onRender(dom) {
         const header = new Header;
-        const headerDOM = header.renderDom;
+        const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
     }
     
     
-    
     renderHTML() {
         return /*html*/`
-            
+            <div></div>
         `;
     }
 }

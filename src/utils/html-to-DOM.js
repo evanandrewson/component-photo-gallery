@@ -1,4 +1,5 @@
 function htmlToDOM(html) {
+    console.log(html);
     const template = document.createElement('template');
     template.innerHTML = html;
     const content = template.content;
@@ -8,6 +9,7 @@ function htmlToDOM(html) {
     }
     
     const firstElementChild = content.firstElementChild;
+    console.log(firstElementChild);
     return firstElementChild;
 }
 

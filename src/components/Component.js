@@ -1,4 +1,4 @@
-import htmlToDOM from './html-to-DOM.js';
+import htmlToDOM from '../utils/html-to-DOM.js';
 
 class Component {
     constructor(props) {
@@ -17,7 +17,6 @@ class Component {
         }
 
         const dom = htmlToDOM(html);
-
         // remember the root Element for later for replacing or removing
         this.rootElement = dom;
         // call onRender to allow components to do additional work
