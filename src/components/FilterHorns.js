@@ -12,7 +12,7 @@ class FilterHorns extends Component {
     
     
     renderHTML() {
-        const images = this.props.image;
+        const images = this.props.images;
         const keywords = getUniqueTypes(images);
         const optionsHTML = renderOptionsHTML(keywords);
         return /*html*/`

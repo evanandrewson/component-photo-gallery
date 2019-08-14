@@ -19,7 +19,7 @@ class App extends Component {
         listSection.appendChild(imageListDOM);
 
         const filterHornsProps = {
-            image: image,
+            images: images,
             onFilter: (imageKeyword) => {
                 let filteredImages;
                 if(imageKeyword === 'all') {
@@ -27,10 +27,20 @@ class App extends Component {
                 } else {
                     filteredImages = images.filter(image => {
                         return image.keyword === imageKeyword;
-                    })
+                    });
                 }
+
+                const updateProps = {
+                    images: filteredImages
+                };
+
+                imageList.update(updateProps);
             }
-        }
+        };
+        const filterImages = new FilterHorns(filterHornsProps);
+        const filterImagesDOM = filterImages.renderDOM();
+        const optionsSection = dom.querySelector('.options-section');
+        optionsSection.appendChild(filterImagesDOM);
     }
     
     
