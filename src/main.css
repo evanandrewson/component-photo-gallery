@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Anton&display=swap');
+
+body {
+    background-color: #eac67a;
+    font-family: 'Abel', sans-serif;
+    }
+
+footer {
+    height: 80px;
+    background-color: #984b43;
+}
