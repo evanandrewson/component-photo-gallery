@@ -2,6 +2,7 @@ import Component from './Component.js';
 import Header from './Header.js';
 import images from '../../assets/images.js';
 import ImageList from './ImageList.js';
+import FilterHorns from './FilterHorns.js';
 
 class App extends Component {
     onRender(dom) {
@@ -16,6 +17,20 @@ class App extends Component {
 
         const listSection = dom.querySelector('.list-section');
         listSection.appendChild(imageListDOM);
+
+        const filterHornsProps = {
+            image: image,
+            onFilter: (imageKeyword) => {
+                let filteredImages;
+                if(imageKeyword === 'all') {
+                    filteredImages = images;
+                } else {
+                    filteredImages = images.filter(image => {
+                        return image.keyword === imageKeyword;
+                    })
+                }
+            }
+        }
     }
     
     
