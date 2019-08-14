@@ -1,5 +1,4 @@
 import HornItem from '../src/components/HornItem.js';
-import images from '../assets/images.js';
 
 const test = QUnit.test;
 
